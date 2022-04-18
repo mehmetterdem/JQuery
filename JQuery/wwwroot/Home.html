@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1><b>İlk Web Sayfam</b></h1>
+
+        <form action="/" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="name" value="" id="ad" placeholder="Adinizi Giriniz" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="name" value="" id="soyad" placeholder="Soyadinizi Giriniz" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="name" value="" id="email" placeholder="Email Giriniz" />
+                    </td>
+                </tr>
+            </table>
+            <input type="button" name="kaydet" value="Kaydet" id="Kaydet" onclick="" />
+            <input type="button" name="gizle" value="Inputlari gizle" id="gizle" class="btn-outline-info" />
+
+        </form>
+    </div>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".btn-outline-info").click(function () {
+
+                $("input[type='text']").hide();
+            })
+
+
+
+            $("#Kaydet").click(function () {
+                console.log("Button Tiklandi");
+                let ad = $("#ad").val();
+                let soyad = $("#soyad").val();
+
+                console.log("Ad:" + ad + "Soyad:" + soyad);
+            })
+        })
+
+
+            //Javascript kodları
+            //function Kontrol() {
+            //    var ad = document.getElementById("ad").value;
+            //    console.log(ad);
+            //}
+
+    </script>
+</body>
+</html>
