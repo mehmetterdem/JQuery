@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <button class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal">
+        Yeni Kisi
+
+    </button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">Bu ilk model deneme  </div>
+                <div class="modal-body">
+
+                    <form action="/" method="post" class="form">
+                        <div class="input-group">
+                            <!--<span class="input-group-text" id="basic-addon1">@</span>-->
+                            <label for="ad">Adiniz:</label>
+                            <input type="text" class="form-control" placeholder="Adiniz" aria-label="Ad" aria-describedby="basic-addon1" id="ad">
+                        </div>
+                        <div class="input-group">
+                            <label>Soyad :</label>
+                            <input type="text" name="soyad" placeholder="Soyadiniz" id="soyad" />
+                        </div>
+
+                        <div class="input-group">
+                            <label>Dogum Tarihiniz:</label>
+                            <input type="date" name="dogumtarihi" placeholder="Dogum Tarihi" id="dogumTarihi" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="sehir">Sehir</label>
+                            <select class="form-control" id="sehir">
+                                <option value="01">Adana</option>
+                                <option value="16">Bursa</option>
+                                <option value="34">Istanbul</option>
+
+
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Hakkinizda</label>
+                            <textarea name="hakkinizda" id="hakkinizda" rows="10" cols="20"></textarea>
+                        </div>
+                        <div class="input-group">
+
+                            <div class="form-check">
+                                <label><input type="checkbox" name="futbool" value="Futbool" />Futbol</label>
+
+                            </div>
+                            <div class="form-check">
+                                <label><input type="checkbox" name="futbool" value="kitap" />Kitap Okuma</label>
+
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <label><input type="checkbox" name="futbool" value="sinema" />Sinema</label>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+
+</body>
+</html>
